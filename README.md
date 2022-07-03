@@ -16,16 +16,16 @@ To install the SDK in your project you need to add the package via composer:
 ```json
 {
     "require": {
-        "pcsoftgroup/tamkeen-php-sdk": "dev"
+        "pcsoftgroup/tamkeen-php-sdk": "0.1"
     },
     "repositories": [
         {
             "type": "package",
             "package": {
                 "name": "pcsoftgroup/tamkeen-php-sdk",
-                "version": "dev",
+                "version": "0.1",
                 "source": {
-                    "url": "https://github.com/pcsoftgroup/tamkeen-php-sdk.git",
+                    "url": "https://github.com/husam-tariq/tamkeen-php-sdk.git",
                     "type": "git",
                     "reference": "main"
                 }
