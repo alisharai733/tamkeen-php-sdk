@@ -17,6 +17,7 @@
             "email": "hsul4n@pcsoftgroup.com"
         }
     ],
+     "version": "0.0.1",
     "require": {
         "php": "^7.2|^8.0",
         "ext-json": "*",
