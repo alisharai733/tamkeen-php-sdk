@@ -23,7 +23,7 @@ trait ManagesPayments
     {
         $response = $this->post('CashPay/InitPayment', [
             'TargetMSISDN' => $phone,
-            'TargetCustomerCVVKey' => $cvvKey,
+            'CustomerCashPayCode' => $cvvKey,
             'Amount' => $amount,
             'CurrencyId' => $currency,
             'Desc' => $description,
