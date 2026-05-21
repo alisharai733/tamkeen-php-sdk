@@ -90,6 +90,9 @@ trait MakesHttpRequests
         $statusCode = $response->getStatusCode();
 
         if ($statusCode < 200 || $statusCode > 299) {
+            $pp = json_decode($responseBody, true) ?: $responseBody;
+            if(isset($pp['ResultMessage']))
+                return json_decode($responseBody, true) ?: $responseBody;
             return $this->handleRequestError($response);
         }
 
